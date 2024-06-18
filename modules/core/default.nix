@@ -1,16 +1,25 @@
-{ inputs, nixpkgs, self, username, host, ...}:
-{
+{inputs, username, host, ...}: {
   imports =
-       [ (import ./bootloader.nix) ]
-    ++ [ (import ./hardware.nix) ]
-    ++ [ (import ./xserver.nix) ]
-    ++ [ (import ./network.nix) ]
-    ++ [ (import ./pipewire.nix) ]
-    ++ [ (import ./program.nix) ]
-    ++ [ (import ./security.nix) ]
-    ++ [ (import ./services.nix) ]
-    ++ [ (import ./system.nix) ]
-    ++ [ (import ./user.nix) ]
-    ++ [ (import ./wayland.nix) ]
-    ++ [ (import ./virtualization.nix) ];
+       [(import ./aseprite/aseprite.nix)]         # pixel art editor
+    ++ [(import ./audacious/audacious.nix)]       # music player
+    ++ [(import ./bat.nix)]                       # better cat command
+    ++ [(import ./btop.nix)]                      # resouces monitor 
+    ++ [(import ./cava.nix)]                      # audio visualizer
+    ++ [(import ./discord.nix)]                   # discord with catppuccin theme
+    ++ [(import ./gaming.nix)]                    # packages related to gaming
+    ++ [(import ./git.nix)]                       # version control
+    ++ [(import ./gtk.nix)]                       # gtk theme
+    ++ [(import ./hyprland)]                      # window manager
+    ++ [(import ./kitty.nix)]                     # terminal
+    ++ [(import ./mako.nix)]                      # notification deamon
+    ++ [(import ./nvim.nix)]                      # neovim editor
+    ++ [(import ./packages.nix)]                  # other packages
+    ++ [(import ./scripts/scripts.nix)]           # personal scripts
+    ++ [(import ./starship.nix)]                  # shell prompt
+    ++ [(import ./swaylock.nix)]                  # lock screen
+    ++ [(import ./micro.nix)]                     # nano replacement
+    ++ [(import ./vscodium.nix)]                  # vscode fork
+    ++ [(import ./waybar)]                        # status bar
+    ++ [(import ./wofi.nix)]                      # launcher
+    ++ [(import ./zsh.nix)];                      # shell
 }
