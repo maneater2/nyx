@@ -1,4 +1,4 @@
-{ config, pkgs, ...}: 
+{ host, config, pkgs, ...}: 
 {
   programs.zsh = {
     enable = true;
@@ -30,12 +30,15 @@
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
 
+      # B)
+      f = "maxfetch";
+
       # Nixos
       ns = "nix-shell --run zsh";
       nix-shell = "nix-shell --run zsh";
-      nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#light";
-      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#light";
-      nix-flake-update = "sudo nix flake update ~/nixos-config#";
+      nix-switch = "sudo nixos-rebuild switch --flake ~/nyx#${host}";
+      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nyx#${host}";
+      nix-flake-update = "sudo nix flake update ~/nixos-config#${host}";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
       # Git
