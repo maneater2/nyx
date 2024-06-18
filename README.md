@@ -9,7 +9,6 @@
    <div align="center">
       <p></p>
       <div align="center">
-         <a href="https://github.com/maneater2/nyx/stargazers">
             <img src="https://img.shields.io/github/stars/maneater2/nyx?color=F5BDE6&labelColor=303446&style=for-the-badge&logo=starship&logoColor=F5BDE6">
          </a>
          <a href="https://github.com/maneater2/nyx/">
