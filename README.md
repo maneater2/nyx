@@ -9,8 +9,6 @@
    <div align="center">
       <p></p>
       <div align="center">
-            <img src="https://img.shields.io/github/stars/maneater2/nyx?color=F5BDE6&labelColor=303446&style=for-the-badge&logo=starship&logoColor=F5BDE6">
-         </a>
          <a href="https://github.com/maneater2/nyx/">
             <img src="https://img.shields.io/github/repo-size/maneater2/nyx?color=C6A0F6&labelColor=303446&style=for-the-badge&logo=github&logoColor=C6A0F6">
          </a>
