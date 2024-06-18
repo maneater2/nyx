@@ -107,7 +107,7 @@ A brief walkthrough of what the install script does.
 
 # 👥 Credits
 
-- These dotfiles are a fork of [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config), the only difference is that this one has slightly less package
+- These dotfiles are a fork of [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config), the only difference is that this one has slightly less packages.
 
 <!-- # ✨ Stars History -->
 
