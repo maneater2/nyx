@@ -7,9 +7,7 @@
     extraSpecialArgs = { inherit inputs username host; };
     users.${username} = {
       imports = 
-        if (host == "desktop") then 
-          [ ./../home/default.desktop.nix ] 
-        else [ ./../home ];
+        [ ./../home ];
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "24.05";
