@@ -38,7 +38,7 @@
       nix-shell = "nix-shell --run zsh";
       nix-switch = "sudo nixos-rebuild switch --flake ~/nyx#${host}";
       nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nyx#${host}";
-      nix-flake-update = "sudo nix flake update ~/nixos-config#${host}";
+      nix-flake-update = "sudo nix flake update ~/nyx#${host}";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
       # Git
