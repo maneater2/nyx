@@ -33,16 +33,17 @@
 
 1. **Install NixOs**
 
-   First install nixos using any [graphical ISO image](https://nixos.org/download.html#nixos-iso). 
+   First install nixos using any [graphical ISO image](https://nixos.org/download.html#nixos-iso).
+   > You can also use the disko.nix file to partition the drive.
 
-2. **Clone the repo**
+3. **Clone the repo**
 
    ```
    nix-shell -p git
    git clone https://github.com/maneater2/nyx
    cd nyx
    ```
-3. **Install script**
+4. **Install script**
 
    > First make sure to read the install script, it isn't long
    
@@ -59,11 +60,11 @@
          ...
       };
    ```
-4. **Reboot**
+5. **Reboot**
 
    After rebooting, you'll be greeted by swaylock prompting for your password, with the wallpaper in the background.
 
-5. **Manual config**
+6. **Manual config**
 
    Even though I use home manager, there is still a little bit of manual configuration to do:
       - Set Aseprite theme (they are in the folder `./nyx/modules/home/aseprite/themes`).
